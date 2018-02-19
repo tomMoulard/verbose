@@ -22,7 +22,7 @@ You can also use some arguments in the function:
 v.v("The result is {}", 9, kwargs = (t,))
 ```
 ## The output file
-You have the choice to save (or not) the output of your script
+You have the choice to save (or not) the output of your script.
 By default, this will not save it, but you can call "saveOutput"
 ```python
 v.saveOutput()

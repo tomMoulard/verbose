@@ -32,7 +32,7 @@ v.v("v.v(\"The result is {}\", 9, kwargs = (t,))", 9)
 v.v("```", 9)
 
 v.v("The output file",2)
-v.v("You have the choice to save (or not) the output of your script",9)
+v.v("You have the choice to save (or not) the output of your script.",9)
 v.v("By default, this will not save it, but you can call \"saveOutput\"",9)
 v.v("```python", 9)
 v.v("v.saveOutput()", 9)
