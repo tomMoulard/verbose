@@ -3,7 +3,6 @@ import time
 
 v = verbose.Verbose(outputfile="README.md", level=10)
 v.v("Verbose",1)
-v.v("===",9)
 v.v("This is a simple way to manage the output for debug a python script.", 9)
 v.v("And add some simple but effective results.", 9)
 
