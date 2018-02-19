@@ -1,5 +1,4 @@
 # Verbose
-===
 This is a simple way to manage the output for debug a python script.
 And add some simple but effective results.
 ## Verbosity level
