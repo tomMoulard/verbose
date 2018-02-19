@@ -3,6 +3,8 @@
 Created on Mon Fev 19 2018
 
 @author: tomMoulard
+An simple way to manage the verbose level and the ouput file with some markdown
+indentation
 """
 
 class Verbose():
@@ -22,6 +24,10 @@ class Verbose():
             string = string.format(*kwargs)
         if self.level > level:
             print("[{}:{}:{}] {}".format(*self.time.gmtime()[3:6], string))
+        if level == 9:
+            level = 0 #for no # before the string on output
+        else:
+            string = " " + string #To add a space before the #'s
         for x in range(level):
             string = "#" + string
         self.res.append(string)
@@ -44,3 +50,4 @@ class Verbose():
             with open(name, "w") as f:
                 for lines in self.res:
                     f.write(lines + "\n")
+
